@@ -11,7 +11,6 @@ func nthUglyNumber(_ n: Int, _ a: Int, _ b: Int, _ c: Int) -> Int {
         let mid = low + (high - low)/2
         let count = mid/a + mid/b + mid/c - mid/lcm(a, b) - mid/lcm(b, c) - mid/lcm(a, c) + mid/lcm(a, lcm(b, c))
         if(count >= n) {
-            result = mid
             high = mid - 1
         } else {
             low = mid + 1

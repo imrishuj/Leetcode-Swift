@@ -6,22 +6,6 @@ import UIKit
 
  Return the number of pairs of interchangeable rectangles in rectangles. */
 
-//func interchangeableRectangles(_ rectangles: [[Int]]) -> Int {
-//    var totalCount = 0
-//    var map = [Double: Int]()
-//
-//    for rect in rectangles {
-//        map[(Double(rect[0])/Double(rect[1])), default: 0] += 1
-//    }
-//
-//    for count in map.values {
-//        if count > 1 {
-//            totalCount += count*(count-1) / 2
-//        }
-//    }
-//    return totalCount
-//}
-
 func interchangeableRectangles(_ rectangles: [[Int]]) -> Int {
     var totalCount = 0
     var maps = [[[Int]]: Int]()

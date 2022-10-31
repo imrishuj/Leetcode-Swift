@@ -19,7 +19,6 @@ func countPrimes(_ n: Int) -> Int {
         }
         start += 1
     }
-    print(visitedArray)
     return visitedArray.filter ({$0 == true}).count
 }
 

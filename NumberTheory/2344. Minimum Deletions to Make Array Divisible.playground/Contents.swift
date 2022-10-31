@@ -7,7 +7,6 @@ func minOperations(_ nums: [Int], _ numsDivide: [Int]) -> Int {
     var firstIndex = 0
     while (firstIndex < numsDivide.count) {
         gcd = euclidGCD(gcd, numsDivide[firstIndex])
-        print("weqwerqewr", gcd)
         firstIndex += 1
     }
     let sortedArray = nums.sorted()

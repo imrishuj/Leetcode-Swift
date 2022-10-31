@@ -6,7 +6,6 @@ import UIKit
 func nthUglyNumber(_ n: Int, _ a: Int, _ b: Int, _ c: Int) -> Int {
     var low = 1
     var high = 10000000000
-    var result = 0
     while(low <= high) {
         let mid = low + (high - low)/2
         let count = mid/a + mid/b + mid/c - mid/lcm(a, b) - mid/lcm(b, c) - mid/lcm(a, c) + mid/lcm(a, lcm(b, c))

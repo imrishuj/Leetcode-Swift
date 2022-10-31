@@ -9,3 +9,9 @@
 - Check whether no is even it yes divide it by 2
 - else subtract it by 1
 - untill it became 0
+
+3. XOR Operation in an Array
+
+- Calculate XOR of all index & return it
+
+
